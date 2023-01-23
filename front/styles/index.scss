@@ -1,0 +1,36 @@
+@import "./mixins";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    outline: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+div.loader {
+    border-radius: 50%;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+  
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+@import "./feed";
+@import "./login";
+@import "./post";
+@import "./navmobile.scss";
+@import "./navdesktop.scss";
+@import "./coments.scss";
